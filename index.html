@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="خزعبلة نيوز - أول موقع إخباري للدراسات العلمية غير التقليدية والاكتشافات المذهلة">
+    <title>الحاجب نيوز - أقوال العالم يحيى بن يحيى محمد</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #b30000;
+            --secondary-color: #8e0000;
+            --light-bg: #fdf6e3;
+            --text-color: #333;
+            --light-text: #777;
+        }
+        
+        body {
+            font-family: 'Tajawal', 'Arial', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        
+        .logo i {
+            margin-left: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .date-time {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav-menu li {
+            margin-left: 25px;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .breaking-news {
+            background-color: #ffeb3b;
+            padding: 8px 0;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 25px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        blockquote {
+            border-right: 4px solid var(--primary-color);
+            padding-right: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            color: var(--light-text);
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        ul {
+            padding-right: 20px;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            color: var(--light-text);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .author {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 400px;
+            background-color: #eee;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .image-caption {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--light-text);
+            margin-top: -15px;
+            margin-bottom: 20px;
+        }
+        
+        .social-share {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .social-share a {
+            display: inline-block;
+            margin: 0 10px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .social-share a:hover {
+            transform: scale(1.2);
+        }
+        
+        .related-articles {
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        
+        .related-articles h3 {
+            margin-bottom: 15px;
+        }
+        
+        .related-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .related-item {
+            border: 1px solid #eee;
+            padding: 10px;
+            border-radius: 5px;
+            transition: box-shadow 0.3s;
+        }
+        
+        .related-item:hover {
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+        
+        .related-item a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+        
+        .note {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: var(--light-text);
+            text-align: center;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            border-right: 3px solid var(--primary-color);
+        }
+        
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .footer-section h3 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: #fff;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .date-time {
+                margin-top: 10px;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-menu li {
+                margin: 5px 0;
+                margin-right: 0;
+            }
+            
+            main {
+                padding: 15px;
+                margin: 15px;
+            }
+            
+            .related-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1 style="color: #ffffff;"> الحاجب نيوز </h1>
+                <h1>  </h1>
+                <i class="fas fa-newspaper"></i>
+            </div>
+            <div class="date-time" id="currentDateTime">
+                <script>
+                    const now = new Date();
+                    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                    document.getElementById('currentDateTime').textContent = now.toLocaleDateString('ar-EG', options);
+                </script>
+            </div>
+        </div>
+    </header>
+    
+
+
+
+
+
+
+
+
+
+    
+    <div class="breaking-news">
+        <marquee direction="right">🚨 عاجل: دراسة تكشف أن النظر إلى المرآة لمدة 3 ساعات يومياً يزيد الثقة بالنفس بنسبة 300% 🚨</marquee>
+    </div>
+    
+    <main>
+        <div class="article-meta">
+            <span class="category">علوم غريبة</span>
+            <span>آخر تحديث: <script>document.write(new Date().toLocaleDateString('ar-EG'))</script></span>
+        </div>
+        
+        <h1>العالم يحيى بن يحيى محمد يكشف: الضحك قبل الفجر يعيد ضبط الجاذبية في جسم الإنسان</h1>
+        
+        <div class="article-meta">
+            <span>بقلم: <span class="author">عبدالله خليل</span> - مراسل علمي</span>
+            <span>عدد المشاهدات: 24,583</span>
+        </div>
+        
+        <div class="article-image">
+            <!-- صورة افتراضية -->
+            <img src="image.jpg" alt="الدكتور يحيى بن يحيى محمد">
+        </div>
+        <div class="image-caption">الدكتور يحيى بن يحيى محمد خلال محاضرة في معهد العلوم غير القابلة للدحض</div>
+        
+        <p>في تصريح علمي فريد أثار جدلًا واسعًا في الأوساط الأكاديمية "الموازية"، أعلن العالم الشهير <strong>يحيى بن يحيى محمد</strong> – مؤسس علم <em>الطاقة الصوتية المستنيرة</em> – أن <strong>الضحك قبل أذان الفجر بـ11 دقيقة</strong> يساعد في إعادة توازن الجاذبية الداخلية للجسم البشري، مما يؤدي إلى خفة في التفكير، وصفاء في الطحال.</p>
+
+        <p>وقال بن يحيى، خلال ندوة افتراضية عُقدت عبر تطبيق تم حظره لاحقًا، إن فريقه البحثي في "معهد العلوم غير القابلة للدحض" اكتشف أن <strong>موجات الضحك القبل-فجرية</strong> تتفاعل مع الهالة المغناطيسية حول الكلى، ما يساهم في تنشيط ما يُعرف بـ"نقطة البهجة الخلوية".</p>
+
+        <blockquote>لقد قمنا بتجربة على 3 دجاجات وجرادة، جميعها ضحكت من نكتة عن الملفوف، وبعدها سجلنا ارتفاعًا طفيفًا في تردد ذبذبة خلايا الطحال بمقدار 0.7 نانوشت. هذه النتائج تؤكد النظرية التي كنا نعمل عليها منذ 17 عامًا في سرية تامة.</blockquote>
+
+        <p>وأكد أيضًا أن <strong>الاستماع لصوت الغليان في قدر العدس</strong> أثناء التفكير العميق يزيد من إنتاج "هرمون الحكمة"، الذي اعتبره العلماء سابقًا مجرد أسطورة سومرية.</p>
+
+        <blockquote>من لم يجرّب أن ينام تحت مغناطيس وهو يفكر في الأهرامات، لا يحق له أن ينتقد نتائجنا. نحن نتعامل مع علوم تتجاوز حدود المنطق التقليدي.</blockquote>
+        
+        <div class="article-image">
+            <img src="image2.jpeg" alt="تجارب الضحك قبل الفجر">
+        </div>
+        <div class="image-caption">أحد المختبرات في معهد العلوم غير القابلة للدحض حيث تجرى تجارب الضحك قبل الفجر</div>
+
+        <h3>📘 من هو يحيى بن يحيى محمد؟</h3>
+        <ul>
+            <li>حاصل على شهادة فخرية من جامعة <strong>الشعور العميق</strong>.</li>
+            <li>ألّف 47 كتابًا، منها:
+                <ul>
+                    <li><em>"الفيزياء الوجدانية وأثر الملح على التفكير الإيجابي"</em> (دار النشر الخفية، 2015)</li>
+                    <li><em>"القرنفل بوصفه مؤشّرًا زمنيًا دقيقًا في بعدنا الرابع"</em> (مطبوعات المعهد، 2018)</li>
+                </ul>
+            </li>
+            <li>ترجم مقاطع من كتب قديمة وجدت داخل ثمرة جوز هند متفحمة.</li>
+            <li>حاصل على جائزة "أطرف عالم" ثلاث مرات متتالية من اتحاد العلوم البديلة.</li>
+        </ul>
+        
+        <h3>ردود الأفعال</h3>
+        <p>أثارت هذه النتائج ردود أفعال متباينة في الأوساط العلمية:</p>
+        <ul>
+            <li>الدكتورة منى الخيالية: "هذه الدراسة تفتح آفاقًا جديدة في فهم العلاقة بين الضحك والجاذبية الداخلية"</li>
+            <li>بروفيسور علي المشكك: "أين الأدلة القاطعة؟ هذه مجرد تخمينات لا تستند إلى منهج علمي"</li>
+            <li>اتحاد العلوم التقليدية: "ندعو إلى الحذر في تفسير هذه النتائج التي لم تنشر في مجلة محكمة"</li>
+        </ul>
+        
+        <div class="social-share">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+            <a href=""><i class="fab fa-telegram"></i></a>
+            <a href=""><i class="fas fa-envelope"></i></a>
+        </div>
+        
+        <div class="related-articles">
+            <h3>مقالات ذات صلة</h3>
+            <div class="related-list">
+                <div class="related-item">
+                    <a href="">دراسة: تناول البطاطا أثناء الوقوف على رأسك يزيد الذكاء بنسبة 40%</a>
+                </div>
+                <div class="related-item">
+                    <a href="">العلماء يكتشفون أن ترديد "يا كركم" 7 مرات يومياً يعالج آلام الظهر</a>
+                </div>
+                <div class="related-item">
+                    <a href="">خبير طاقة: النوم بجوار ثمرة بطيخ أحمر يجذب الثروة</a>
+                </div>
+                <div class="related-item">
+                    <a href="">بحث جديد: التحديق في شاشة الهاتف دون رمش يطور قدرات خارقة</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="note">
+            🚨 <strong>ملاحظة:</strong> هذه المادة تُستخدم لأغراض الفكاهة والتوعية بخطورة تصديق كل ما يُنشر على الإنترنت. لا يوجد شيء اسمه "هرمون الحكمة"، ونتمنى ألا تضحك قبل الفجر دون سبب وجيه.<br>
+            خزعبلة نيوز موقع إخباري ساخر، لا يعتمد على الحقائق العلمية الموثوقة.
+        </p>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>عن الموقع</h3>
+                <p>خزعبلة نيوز أول موقع إخباري يقدم الأخبار العلمية المزيفة من قبل المبرمج عبدالله خليل باحترافية عالية، هدفنا الترفيه والتوعية ضد الأخبار الكاذبة.</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">أرشيف الأخبار</a></li>
+                    <li><a href="#">فريق العمل</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">اتفاقية الاستخدام</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>اتصل بنا</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@khazabala-news.com</li>
+                    <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                    <li><i class="fas fa-map-marker-alt"></i> مدينة الحاجب، شارع الوهم 42</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>جميع الحقوق محفوظة &copy; 2025عبلة نيوز. هذا الموقع لا يقدم أي محتوى حقيقي وهو لأغراض فكاهية فقط.</p>
+        </div>
+    </footer>
+</body>
+</html>
